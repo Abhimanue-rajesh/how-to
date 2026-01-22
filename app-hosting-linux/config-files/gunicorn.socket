@@ -1,0 +1,13 @@
+# Gunicorn Socket Configuration
+# Place this file at: /etc/systemd/system/gunicorn.socket
+# Adjust paths and settings according to your project
+
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+
+[Install]
+WantedBy=sockets.target
+

@@ -1,0 +1,35 @@
+# Gunicorn Service Configuration
+# Place this file at: /etc/systemd/system/gunicorn.service
+# IMPORTANT: Replace the following placeholders with your actual values:
+#   - /home/username/project: Your project's full path
+#   - username: Your system username
+#   - your_project: Your Django project name (directory containing wsgi.py)
+
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=username
+Group=www-data
+WorkingDirectory=/home/username/project
+ExecStart=/home/username/project/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          your_project.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
+# Configuration Notes:
+# - User: Change 'username' to your actual system username
+# - Group: www-data is the standard web server group
+# - WorkingDirectory: Full path to your Django project root
+# - ExecStart: Path to gunicorn in your virtual environment
+#   - Adjust /home/username/project/venv/bin/gunicorn to match your venv path
+#   - Adjust your_project.wsgi:application to match your project name
+# - Workers: Number of worker processes (adjust based on server resources)
+#   - Recommended: (2 x CPU cores) + 1
+
