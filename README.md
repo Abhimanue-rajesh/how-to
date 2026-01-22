@@ -12,10 +12,12 @@ A comprehensive collection of step-by-step guides and tutorials for various deve
 
 ### AWS
 - [Setting Up SSH Key Permissions for AWS EC2](aws/ssh-key-permissions-setup.md)
+- [Backup Database and Media Files from EC2 Instance](aws/backup-database-and-media-from-ec2.md)
 
 ### App Hosting (Linux)
 - [Django App Hosting (Linux)](app-hosting-linux/django-app.md)
 - [Deploying Django with Nginx, SQLite, and Gunicorn on AWS](app-hosting-linux/django-deployment-aws-nginx-gunicorn.md)
+- [Setup SSL Certificate with Certbot for Nginx](app-hosting-linux/setup-ssl-certbot-nginx.md)
 
 ---
 

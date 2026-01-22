@@ -385,9 +385,9 @@ sudo chmod -R 755 /path/to/your/project
 
 ## Next Steps
 
-- Set up SSL/TLS certificates
+- Set up SSL/TLS certificates - See [Setup SSL Certificate with Certbot for Nginx](setup-ssl-certbot-nginx.md)
 - Configure domain name DNS settings
-- Set up automated backups
+- Set up automated backups - See [Backup Database and Media Files from EC2 Instance](../aws/backup-database-and-media-from-ec2.md)
 - Configure log rotation
 - Set up monitoring and alerts
 - Consider using a process manager like Supervisor for additional control
