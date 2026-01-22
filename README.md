@@ -10,6 +10,9 @@ A comprehensive collection of step-by-step guides and tutorials for various deve
 ### Server Management
 - [Server Status Check and Optimization](server-management/server-status-and-optimization.md)
 
+### AWS
+- [Setting Up SSH Key Permissions for AWS EC2](aws/ssh-key-permissions-setup.md)
+
 ### App Hosting (Linux)
 - [Django App Hosting (Linux)](app-hosting-linux/django-app.md)
 - [Deploying Django with Nginx, SQLite, and Gunicorn on AWS](app-hosting-linux/django-deployment-aws-nginx-gunicorn.md)

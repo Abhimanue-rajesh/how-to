@@ -46,6 +46,10 @@ This guide walks you through deploying a Django application on AWS EC2 using Ngi
 
 ## Step 2: Connect to the Instance
 
+### Set Up SSH Key Permissions
+
+Before connecting, you need to set the correct permissions on your `.pem` key file. Follow the guide: [Setting Up SSH Key Permissions for AWS EC2](aws/ssh-key-permissions-setup.md)
+
 ### Using SSH (Linux/Mac)
 
 ```bash
