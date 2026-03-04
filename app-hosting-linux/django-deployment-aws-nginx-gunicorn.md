@@ -249,8 +249,6 @@ Copy the contents from the linked configuration file and adjust:
 Start the Gunicorn socket and service:
 
 ```bash
-sudo systemctl start gunicorn.socket
-sudo systemctl enable gunicorn.socket
 sudo systemctl start gunicorn.service
 sudo systemctl enable gunicorn.service
 ```
